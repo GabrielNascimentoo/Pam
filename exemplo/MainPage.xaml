@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="exemplo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="romero.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                x:Name="MessageLabel"
+                Text="Ola, Cristiano Romero!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="O melhor jogador de todos os tempos"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Entry
+                x:Name="NameEntry"
+                Placeholder="Digite aqui seu nome"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Numero de bolas de ouro" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="MessageBtn"
+                Text="Clique para colocar o nome" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnMessageClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
